@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pd311_web_api.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+457e30b3ff0ba0935f47539dcf99ef8ad719f176")]
 [assembly: System.Reflection.AssemblyProductAttribute("pd311_web_api.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pd311_web_api.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

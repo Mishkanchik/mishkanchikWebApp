@@ -84,19 +84,19 @@ builder.Services
 
 // CORS
 
-string? allowedOrigins = builder.Configuration["Cors:AllowedOrigins"];
-Console.WriteLine("/t/t/t/t" + allowedOrigins);
+//string? allowedOrigins = builder.Configuration["Cors:AllowedOrigins"];
+//Console.WriteLine("/t/t/t/t" + allowedOrigins);
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("DefaultCors", builder =>
-    {
-        builder.WithOrigins(allowedOrigins)
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials();
-    });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("DefaultCors", builder =>
+//    {
+//        builder.WithOrigins("*")
+//        .AllowAnyMethod()
+//        .AllowAnyHeader()
+//        .AllowCredentials();
+//    });
+//});
 
 // JWT bearer authorization
 builder.Services.AddEndpointsApiExplorer();
@@ -141,7 +141,7 @@ app.UseMiddleware<MiddlewareLogger>();
 
 app.UseHttpsRedirection();
 
-app.UseCors("DefaultCors");
+//app.UseCors("DefaultCors");
 
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
